@@ -14,6 +14,10 @@ const LayoutMainContentWrap = styled.div`
   display: flex;
 `;
 
+const MainContent = styled.section`
+  flex: 1;
+`;
+
 interface LayoutsProps {
   children?: React.ReactNode;
 }
@@ -27,7 +31,7 @@ export const Layouts = ({ children }: LayoutsProps) => {
         <div>
           <SideNavigation />
         </div>
-        <div>{children}</div>
+        <MainContent>{children}</MainContent>
       </LayoutMainContentWrap>
     </Wrap>
   );

@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import { Studio } from '@/features/studio';
+import { StudioMain } from '@/features/studio';
 import { Layouts } from '@/components';
 
 export const protectedRoutes = [
@@ -14,7 +14,7 @@ export const protectedRoutes = [
     children: [
       {
         path: '/',
-        element: <Studio />,
+        element: <StudioMain />,
       },
       {
         path: '*',
